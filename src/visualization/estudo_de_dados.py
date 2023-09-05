@@ -3,7 +3,7 @@ import plotly.express as px
 import streamlit as st
 import streamlit.components.v1 as components
 
-from config import DADOS, MAPA
+from src.features.config import DADOS, MAPA
 
 dados = DADOS
 

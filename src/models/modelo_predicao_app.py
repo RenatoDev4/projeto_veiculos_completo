@@ -4,9 +4,9 @@ import streamlit as st
 from category_encoders import TargetEncoder
 from sklearn.preprocessing import FunctionTransformer
 
-from config import (ANO_ESCOLHA, CIDADE_UNICO, COMBUSTIVEL_UNICO,
-                    CORES_ESCOLHA, DADOS_MACHINE_LEARNING, KM_ESCOLHA, MODELO,
-                    MODELO_UNICO, MOTOR_UNICO)
+from src.features.config import (ANO_ESCOLHA, CIDADE_UNICO, COMBUSTIVEL_UNICO,
+                                 CORES_ESCOLHA, DADOS_MACHINE_LEARNING,
+                                 KM_ESCOLHA, MODELO, MODELO_UNICO, MOTOR_UNICO)
 
 dataframe_machine_learning = DADOS_MACHINE_LEARNING
 modelo_unico = MODELO_UNICO
@@ -70,7 +70,7 @@ def predicao():
             pd.DataFrame(dados_transformados,
                          columns=colunas_dados_transformados)
         ], axis=1)
-        dados_limpos = pd.read_csv('dataframe_let.csv', sep=';').drop('Unnamed: 0', axis=1)  # noqa
+        dados_limpos = pd.read_csv('data/interim/dataframe_let.csv', sep=';').drop('Unnamed: 0', axis=1)  # noqa
         encoder = TargetEncoder()
         variaveis_categoricas = ['modelo', 'combustivel', 'cor', 'cidade']
         encoder.fit(dados_limpos[variaveis_categoricas], dados_limpos['preco'])

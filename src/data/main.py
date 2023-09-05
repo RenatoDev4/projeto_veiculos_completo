@@ -1,9 +1,10 @@
 import pandas as pd
 
-from clean_data import clean_and_extract_data
-from config import CLEAN_WANT_DF, DADOS, LL_DF
-from train_model import (apply_log1p_transformation, apply_target_encoder,
-                         create_pipeline, split_data, train_model)
+from src.features.clean_data import clean_and_extract_data
+from src.features.config import CLEAN_WANT_DF, DADOS, LL_DF
+from src.models.train_model import (apply_log1p_transformation,
+                                    apply_target_encoder, create_pipeline,
+                                    split_data, train_model)
 
 
 def main() -> None:
@@ -31,7 +32,7 @@ def main() -> None:
 
     resulting_df = clean_and_extract_data(df, df_2)
 
-    resulting_df.to_csv('name_you_want.csv', index=False)
+    resulting_df.to_csv('data/processed/name_you_want.csv', index=False)
 
     data = DADOS
 

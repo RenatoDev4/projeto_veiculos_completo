@@ -1,6 +1,6 @@
 import streamlit as st
 
-from config import DADOS
+from src.features.config import DADOS
 
 
 def formata_numero(valor: float, prefixo: str = '') -> str:

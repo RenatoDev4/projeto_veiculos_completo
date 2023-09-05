@@ -1,10 +1,10 @@
 import streamlit as st
 
-from conclusao_projeto import conclusao
-from estatistica import estatisticas
-from estudo_de_dados import graficos
-from modelo_predicao_app import predicao
-from problema_resolvido import problema_ser_resolvido
+from src.models.modelo_predicao_app import predicao
+from src.visualization.conclusao_projeto import conclusao
+from src.visualization.estatistica import estatisticas
+from src.visualization.estudo_de_dados import graficos
+from src.visualization.problema_resolvido import problema_ser_resolvido
 
 st.set_page_config(page_title='Projeto DataScience - Veículos', layout="wide")
 
