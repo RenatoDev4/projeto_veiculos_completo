@@ -23,6 +23,14 @@ and
 $ source setup.sh
 ```
 
+### You can run with docker:
+-----------
+``` bash
+docker pull renatodev4/data-science-car-prediction
+```
+
+Using this command a docker container will be started with the project running with streamlit in your local machine.
+
 ### To start the project, run:
 ------------
 
@@ -36,9 +44,9 @@ $ python -u "your_user/src/data/main.py'
 $ python -u "your_user/src/features/webscraping.py'
 ```
 
-**Webscraping is done through the website www.icarros.com.br, in order to scrape it you will need to make requests through a proxy or through an API like the one I used (Zenrows)**
+Webscraping is done through the website www.icarros.com.br, in order to scrape it you will need to make requests through a proxy or through an API like the one I used (Zenrows)
 
-**If not, the site will block your IP after a few requests.**
+If not, the site will block your IP after a few requests.
 
 
 Project Organization
@@ -92,7 +100,7 @@ Project Organization
 
 ## Made by:
 
-Project made by Renato Moraes for his portfolio.
+Project made by **Renato Moraes** for his portfolio.<br>
 You can check the Data Science project running at: https://projeto-renato-datascience-veiculos.streamlit.app/
 
 
