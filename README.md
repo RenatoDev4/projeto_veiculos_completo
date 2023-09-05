@@ -1,7 +1,8 @@
-# Car Prediction Project
-==============================
+# Car Prediction - Data Science Project
 
 A car dealership company hired us to solve the following problem: Where is the best place to buy cars for resale and what are the best cars to buy for the highest profit?
+
+**This hypothetical problem created just for the project**
 
 ### Requirements to run my project:
 -----------
@@ -34,6 +35,10 @@ $ python -u "your_user/src/data/main.py'
 ``` bash
 $ python -u "your_user/src/features/webscraping.py'
 ```
+
+**Webscraping is done through the website www.icarros.com.br, in order to scrape it you will need to make requests through a proxy or through an API like the one I used (Zenrows)**
+
+**If not, the site will block your IP after a few requests.**
 
 
 Project Organization
@@ -88,6 +93,7 @@ Project Organization
 ## Made by:
 
 Project made by Renato Moraes for his portfolio.
+You can check the Data Science project running at: https://projeto-renato-datascience-veiculos.streamlit.app/
 
 
 --------
