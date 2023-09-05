@@ -31,7 +31,16 @@ docker pull renatodev4/data-science-car-prediction
 
 Using this command a docker container will be started with the project running with streamlit in your local machine.
 
-### To start the project, run:
+### You can run with docker:
+-----------
+``` bash
+docker pull renatodev4/data-science-car-prediction
+```
+
+Using this command a docker container will be started with the project running with streamlit in your local machine.
+
+
+### Start the project manually, run:
 ------------
 
 ``` bash
